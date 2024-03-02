@@ -3,22 +3,155 @@
     <div></div> 
         <h2>Portfolio</h2>
         <ul>
-        <a href="index.html">about</a>
-    </div>
-    <div>
-        <title></title>
-    </div>
-    <a href="projects.html">projects</a>
-    
-    </div>
-    <div>
-        <a href="contacts.html">contacts</a>
-    
+            <div> <a href="about">about</a></div>
+             <div> <a href="projects.html">projects</a></div>
+            <div>  <a href="contacts.html">contacts</a></div>
+          </ul>
     </div>
     <style>
-        h1 {
-            text-align: center;
-        }
+    /* General styles */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+/* Navigation (assuming you have a separate navigation section) */
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #0800ff;
+  border-radius: 50px;
+  box-shadow: 0 0 10px #0800ff; /* Added box-shadow for hover effect */
+}
+
+/* Main content area */
+.main-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Contact form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-right: 400px;
+}
+
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-right: 300px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  margin-right: 500px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  margin-right: 500px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  margin-right: 500px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Contact information */
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.contact-info h3 {
+  margin: 0;
+  text-align: center;
+}
+
+.contact-info img {
+  margin: 0 10px;
+  width: 50px;
+  height: 50px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .main-content {
+    width: 90%;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin-bottom: 10px;
+  }
+}
+ul {
+  list-style: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Arrange list items horizontally */
+  justify-content: space-around; /* Distribute items evenly */
+  
+}
+
+ul a {
+  text-decoration: none; /* Remove underline from links */
+  color: black; /* Set link color */
+  padding: 10px 20px; /* Add some padding to links */
+  border-radius: 50px;
+  border-color: aquamarine;
+}
+
+ul a:hover {
+  background-color: #0303fb; /* Change background color on hover */
+  border-radius: 50px;
+}
+
+
     </style>
     <body>
         <h1>Contact me</h1>
@@ -45,6 +178,7 @@
                 <option value="Male">male</option>
                 <option value="Female">female</option>
             </select>
+            <button type="button" class="btn btn-outline-success">Success</button>
         </fieldset>
       
            
